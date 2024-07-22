@@ -45,6 +45,7 @@ Example:
 
 ```plaintext
 http://127.0.0.1:5000/
+```
 
 Response
 ```bash
@@ -55,3 +56,17 @@ Analyze Number Endpoint
 - **URL:** `/analyze_number/<int:n>`
 - **Method:** GET
 - **Description:** Analyzes the given number to check if it is an Armstrong number and a palindrome.
+
+Example:
+```bash
+http://127.0.0.1:5000/analyze_number/153
+```
+
+Response:
+```bash
+{
+  "number": 153,
+  "armstrong": true,
+  "palindrome": false
+}
+```
